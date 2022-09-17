@@ -6,3 +6,6 @@ P4 OpenClassRoom
 XS Max)
 - The application is not available on iPad
 - The application supports Portrait and Landscape orientation
+
+#Created By 
+-Mark 
