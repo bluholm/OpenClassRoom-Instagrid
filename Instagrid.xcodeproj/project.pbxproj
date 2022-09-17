@@ -20,6 +20,8 @@
 		0E4F01B028AA8CC800299E9D /* InstagridUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4F01AF28AA8CC800299E9D /* InstagridUITests.swift */; };
 		0E4F01B228AA8CC800299E9D /* InstagridUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4F01B128AA8CC800299E9D /* InstagridUITestsLaunchTests.swift */; };
 		0E4FAE0028AEA8DA0008358C /* PicturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4FADFF28AEA8DA0008358C /* PicturesView.swift */; };
+		0E59872728D6834800C8808A /* vc_SharePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59872628D6834800C8808A /* vc_SharePicture.swift */; };
+		0E59872928D6836900C8808A /* vc_AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59872828D6836900C8808A /* vc_AnimationView.swift */; };
 		0ED2053228AB39E600197B2C /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ED2053028AB39E600197B2C /* ThirstySoftRegular.otf */; };
 		0ED2053328AB39E600197B2C /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ED2053128AB39E600197B2C /* Delm-Medium.otf */; };
 		0EEA5E1228ADF882000A0C9B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA5E1128ADF882000A0C9B /* Model.swift */; };
@@ -60,6 +62,8 @@
 		0E4F01AF28AA8CC800299E9D /* InstagridUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagridUITests.swift; sourceTree = "<group>"; };
 		0E4F01B128AA8CC800299E9D /* InstagridUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagridUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0E4FADFF28AEA8DA0008358C /* PicturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesView.swift; sourceTree = "<group>"; };
+		0E59872628D6834800C8808A /* vc_SharePicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = vc_SharePicture.swift; path = instagrid/Controller/vc_SharePicture.swift; sourceTree = SOURCE_ROOT; };
+		0E59872828D6836900C8808A /* vc_AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = vc_AnimationView.swift; path = instagrid/Controller/vc_AnimationView.swift; sourceTree = SOURCE_ROOT; };
 		0ED2053028AB39E600197B2C /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
 		0ED2053128AB39E600197B2C /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
 		0EEA5E1128ADF882000A0C9B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -163,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				0E4F019228AA8CC700299E9D /* ViewController.swift */,
+				0E59872628D6834800C8808A /* vc_SharePicture.swift */,
+				0E59872828D6836900C8808A /* vc_AnimationView.swift */,
 				0E4236AE28CFA27900B78656 /* vc_Picker.swift */,
 				0E4236B528CFB1C000B78656 /* vc_Gesture.swift */,
 				0E4236B328CFA95500B78656 /* vc_PickerDelegate.swift */,
@@ -315,9 +321,11 @@
 			files = (
 				0E4236B128CFA33000B78656 /* vc_Picker.swift in Sources */,
 				0E4236B428CFA95500B78656 /* vc_PickerDelegate.swift in Sources */,
+				0E59872928D6836900C8808A /* vc_AnimationView.swift in Sources */,
 				0EEA5E1228ADF882000A0C9B /* Model.swift in Sources */,
 				0E4F019328AA8CC700299E9D /* ViewController.swift in Sources */,
 				0E4F018F28AA8CC700299E9D /* AppDelegate.swift in Sources */,
+				0E59872728D6834800C8808A /* vc_SharePicture.swift in Sources */,
 				0E4F019128AA8CC700299E9D /* SceneDelegate.swift in Sources */,
 				0E4236B628CFB1C000B78656 /* vc_Gesture.swift in Sources */,
 				0E4FAE0028AEA8DA0008358C /* PicturesView.swift in Sources */,
