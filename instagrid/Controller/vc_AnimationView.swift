@@ -8,8 +8,7 @@
 import UIKit
 
 extension ViewController {
-    
-    func moveView(viewTobeMoved: UIView,direction: Direction) {
+    func moveView(viewTobeMoved: UIView, direction: Direction) {
         switch direction {
         case .moveOutUp:
             UIView.animate(withDuration: 0.5) {
@@ -20,14 +19,12 @@ extension ViewController {
                 viewTobeMoved.transform = CGAffineTransform(translationX: -self.view.frame.width, y: 0 )
             }
         case .moveIn:
-            
-            UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: [], animations: {
-                viewTobeMoved.transform = .identity
-                viewTobeMoved.transform = .identity
+            UIView.animate(withDuration: 0.4, delay: 0,
+                           usingSpringWithDamping: 0.5,
+                           initialSpringVelocity: 0.5,
+                           options: [], animations: {
                 viewTobeMoved.transform = .identity
             })
-            
         }
     }
-    
 }

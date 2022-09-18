@@ -8,20 +8,19 @@
 import UIKit
 
 extension ViewController {
-    
     @IBAction func pickAPicture(_ sender: UIButton) {
         guard UIImagePickerController.isSourceTypeAvailable(.photoLibrary) else {
             return
         }
 
         buttonTapped = sender
-        let vc = UIImagePickerController()
-        vc.sourceType = .photoLibrary
-        vc.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary) ?? []
-        assert(!vc.mediaTypes.isEmpty)
-        vc.mediaTypes = ["public.image"]
-        vc.allowsEditing = false
-        vc.delegate = self
-        present(vc, animated: true, completion: nil)
+        let pickerController = UIImagePickerController()
+        pickerController.sourceType = .photoLibrary
+        pickerController.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary) ?? []
+        assert(!pickerController.mediaTypes.isEmpty)
+        pickerController.mediaTypes = ["public.image"]
+        pickerController.allowsEditing = false
+        pickerController.delegate = self
+        present(pickerController, animated: true, completion: nil)
     }
 }
