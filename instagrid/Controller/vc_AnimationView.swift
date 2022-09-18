@@ -11,9 +11,13 @@ extension ViewController {
     
     func moveView(viewTobeMoved: UIView,direction: Direction) {
         switch direction {
-        case .moveOut:
+        case .moveOutUp:
             UIView.animate(withDuration: 0.5) {
                 viewTobeMoved.transform = CGAffineTransform(translationX: 0, y: -self.view.frame.height)
+            }
+        case .moveOutLeft:
+            UIView.animate(withDuration: 0.5) {
+                viewTobeMoved.transform = CGAffineTransform(translationX: -self.view.frame.width, y: 0 )
             }
         case .moveIn:
             

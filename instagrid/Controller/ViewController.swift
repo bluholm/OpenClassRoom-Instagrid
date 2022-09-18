@@ -10,7 +10,10 @@ import UIKit
 class ViewController: UIViewController {
     
     enum Direction {
-        case moveOut, moveIn
+        case moveOutUp, moveOutLeft, moveIn
+    }
+    enum swipeDirection {
+        case up, left
     }
     
     var buttonTapped = UIButton()
@@ -22,14 +25,13 @@ class ViewController: UIViewController {
     @IBOutlet var swipeUptoShare: UILabel!
     @IBOutlet var gridView: UIView!
     @IBOutlet var patternButton: [UIButton]!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         moveView(viewTobeMoved: gridView, direction: .moveIn)
-        self.swipeGestureInLoad()
-        
-        self.changeOrientation()
-        
+        checkOrientation()
         
     }
 
@@ -59,21 +61,25 @@ class ViewController: UIViewController {
         }
     }
     
-    
+    // MARK: - Orientation LandScape / Portrait
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
-        changeOrientation()
+        checkOrientation()
     }
     
-    
-    func changeOrientation(){
+    func checkOrientation(){
+        
+        removeGestureRecognizer()
+        
         if UIDevice.current.orientation.isLandscape {
             swipeUptoShare.text = "swipe left to Share"
             swipeArrow.transform = CGAffineTransform(rotationAngle: (-CGFloat.pi/2))
+            swipeLeftGestureInLoad()
             
         }else{
             swipeUptoShare.text = "swipe up to Share"
             swipeArrow.transform = CGAffineTransform(rotationAngle: 0)
+            swipeUpGestureInLoad()
         }
         
     }
