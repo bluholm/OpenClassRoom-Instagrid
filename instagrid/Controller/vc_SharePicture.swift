@@ -16,6 +16,7 @@ extension ViewController {
         UIGraphicsEndImageContext()
         return image
     }
+    
     func sharePicture(image: UIImage) {
         let activityController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
         activityController.popoverPresentationController?.sourceView = self.view
@@ -31,6 +32,7 @@ extension ViewController {
                 self.alertMessage("No Action have been done . try again.")
             }
         }
+        
     func reloadButtonImage() {
         let image = UIImage(named: "plus")
         imageButton1.setImage(image, for: .normal)
@@ -39,6 +41,7 @@ extension ViewController {
         imageButton4.setImage(image, for: .normal)
         }
     }
+    
     func alertMessage(_ message: String) {
         let alertController = UIAlertController(title: "Message", message: message, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in}))

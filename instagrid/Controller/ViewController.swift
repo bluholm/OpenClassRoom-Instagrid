@@ -45,16 +45,19 @@ class ViewController: UIViewController {
             break
         }
     }
+    
     func deselectPatternButton() {
         for number in 0...patternButton.count-1 {
             patternButton[number].isSelected = false
         }
     }
+    
     // MARK: - Orientation LandScape / Portrait
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         checkOrientation()
     }
+    
     func checkOrientation() {
         removeGestureRecognizer()
         if UIDevice.current.orientation.isLandscape {
