@@ -7,8 +7,9 @@
 
 import UIKit
 
-// MARK: Extension For PickerController
+
 extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }

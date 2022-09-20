@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        moveView(viewToBeMoved: gridView, direction: .moveIn)
+        animateViewInDirection(viewToBeMoved: gridView, direction: .moveIn)
         checkOrientationAndUpdateViewController()
     }
     
@@ -59,7 +59,7 @@ class ViewController: UIViewController {
     // MARK: Custom Logic
     
     private func didDeselectPatternButton() {
-        patternButton.forEach { $0.isSelected = false }
+        patternButton.forEach{ $0.isSelected = false }
     }
 
     private func checkOrientationAndUpdateViewController() {

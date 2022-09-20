@@ -8,6 +8,7 @@
 import UIKit
 
 extension ViewController {
+    
     func addSwipeUpGestureInLoad() {
         let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(swipedUp))
         swipeUp.direction = .up
@@ -23,13 +24,13 @@ extension ViewController {
     @objc func swipedUp() {
         guard let picture = getImageFromView(view: gridView) else { return}
         sharePicture(image: picture)
-        moveView(viewToBeMoved: gridView, direction: .moveOutUp)
+        animateViewInDirection(viewToBeMoved: gridView, direction: .moveOutUp)
     }
     
     @objc func swipedLeft() {
         guard let picture = getImageFromView(view: gridView) else { return}
         sharePicture(image: picture)
-        moveView(viewToBeMoved: gridView, direction: .moveOutLeft)
+        animateViewInDirection(viewToBeMoved: gridView, direction: .moveOutLeft)
     }
     
     func removeGestureRecognizer() {

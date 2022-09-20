@@ -8,7 +8,9 @@
 import UIKit
 
 extension ViewController {
-    func moveView(viewToBeMoved: UIView, direction: Direction) {
+    
+    ///Animiate a view with direction argument
+    func animateViewInDirection(viewToBeMoved: UIView, direction: Direction) {
         switch direction {
         case .moveOutUp:
             UIView.animate(withDuration: 0.5) {

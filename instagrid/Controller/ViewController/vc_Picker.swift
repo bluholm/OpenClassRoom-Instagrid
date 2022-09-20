@@ -8,7 +8,10 @@
 import UIKit
 
 extension ViewController {
+    
+    
     @IBAction func pickAPicture(_ sender: UIButton) {
+        
         guard UIImagePickerController.isSourceTypeAvailable(.photoLibrary) else {
             return
         }
