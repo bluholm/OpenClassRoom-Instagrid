@@ -59,8 +59,8 @@
 		0E4F01AB28AA8CC800299E9D /* InstagridUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagridUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E4F01AF28AA8CC800299E9D /* InstagridUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagridUITests.swift; sourceTree = "<group>"; };
 		0E4F01B128AA8CC800299E9D /* InstagridUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagridUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		0E59872628D6834800C8808A /* vc_SharePicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = vc_SharePicture.swift; path = instagrid/Controller/vc_SharePicture.swift; sourceTree = SOURCE_ROOT; };
-		0E59872828D6836900C8808A /* vc_AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = vc_AnimationView.swift; path = instagrid/Controller/vc_AnimationView.swift; sourceTree = SOURCE_ROOT; };
+		0E59872628D6834800C8808A /* vc_SharePicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = vc_SharePicture.swift; path = instagrid/Controller/ViewController/vc_SharePicture.swift; sourceTree = SOURCE_ROOT; };
+		0E59872828D6836900C8808A /* vc_AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = vc_AnimationView.swift; path = instagrid/Controller/ViewController/vc_AnimationView.swift; sourceTree = SOURCE_ROOT; };
 		0ED2053028AB39E600197B2C /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
 		0EEEE85B28D6C033002F6E34 /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,12 +161,7 @@
 		0EEA5E1428ADF8A2000A0C9B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0E4F019228AA8CC700299E9D /* ViewController.swift */,
-				0E59872628D6834800C8808A /* vc_SharePicture.swift */,
-				0E59872828D6836900C8808A /* vc_AnimationView.swift */,
-				0E4236AE28CFA27900B78656 /* vc_Picker.swift */,
-				0E4236B528CFB1C000B78656 /* vc_Gesture.swift */,
-				0E4236B328CFA95500B78656 /* vc_PickerDelegate.swift */,
+				0EEEE86628DA2C98002F6E34 /* ViewController */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,6 +173,19 @@
 				0E4F019428AA8CC700299E9D /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0EEEE86628DA2C98002F6E34 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0E4F019228AA8CC700299E9D /* ViewController.swift */,
+				0E59872628D6834800C8808A /* vc_SharePicture.swift */,
+				0E59872828D6836900C8808A /* vc_AnimationView.swift */,
+				0E4236AE28CFA27900B78656 /* vc_Picker.swift */,
+				0E4236B528CFB1C000B78656 /* vc_Gesture.swift */,
+				0E4236B328CFA95500B78656 /* vc_PickerDelegate.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

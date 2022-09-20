@@ -8,22 +8,22 @@
 import UIKit
 
 extension ViewController {
-    func moveView(viewTobeMoved: UIView, direction: Direction) {
+    func moveView(viewToBeMoved: UIView, direction: Direction) {
         switch direction {
         case .moveOutUp:
             UIView.animate(withDuration: 0.5) {
-                viewTobeMoved.transform = CGAffineTransform(translationX: 0, y: -self.view.frame.height)
+                viewToBeMoved.transform = CGAffineTransform(translationX: 0, y: -self.view.frame.height)
             }
         case .moveOutLeft:
             UIView.animate(withDuration: 0.5) {
-                viewTobeMoved.transform = CGAffineTransform(translationX: -self.view.frame.width, y: 0 )
+                viewToBeMoved.transform = CGAffineTransform(translationX: -self.view.frame.width, y: 0 )
             }
         case .moveIn:
             UIView.animate(withDuration: 0.4, delay: 0,
                            usingSpringWithDamping: 0.5,
                            initialSpringVelocity: 0.5,
                            options: [], animations: {
-                viewTobeMoved.transform = .identity
+                viewToBeMoved.transform = .identity
             })
         }
     }

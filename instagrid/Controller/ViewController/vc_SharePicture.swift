@@ -17,6 +17,7 @@ extension ViewController {
         return image
     }
     
+    
     func sharePicture(image: UIImage) {
         let activityController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
         activityController.popoverPresentationController?.sourceView = self.view
@@ -24,7 +25,7 @@ extension ViewController {
         activityController.completionWithItemsHandler = {
             (activityType, completed: Bool,
              returnedItems: [Any]?, error: Error?) in
-            self.moveView(viewTobeMoved: self.gridView, direction: .moveIn)
+            self.moveView(viewToBeMoved: self.gridView, direction: .moveIn)
             if completed {
                 reloadButtonImage()
                 self.alertMessage("Action done . Thank you !")
