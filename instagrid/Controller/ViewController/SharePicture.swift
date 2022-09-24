@@ -32,21 +32,21 @@ extension ViewController {
              returnedItems: [Any]?, error: Error?) in
             self.animateViewInDirection(viewToBeMoved: self.gridView, direction: .moveIn)
             if completed {
-                reloadButtonImage()
+                self.reloadButtonImage()
                 self.alertMessage("Action done . Thank you !")
             } else {
                 self.alertMessage("No Action have been done . try again.")
             }
         }
-      
+    }
+    
     ///Reload the 4 button from the gridview and change states to .normal
-    func reloadButtonImage() {
+    private func reloadButtonImage() {
         let image = UIImage(named: "plus")
         imageButton1.setImage(image, for: .normal)
         imageButton2.setImage(image, for: .normal)
         imageButton3.setImage(image, for: .normal)
         imageButton4.setImage(image, for: .normal)
-        }
     }
     
     /// start a UIAlertController
